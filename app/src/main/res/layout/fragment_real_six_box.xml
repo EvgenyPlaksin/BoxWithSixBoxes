@@ -9,14 +9,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <androidx.gridlayout.widget.GridLayout
-            android:id="@+id/grid"
+            android:id="@+id/grid_six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="1dp"
             android:layout_marginTop="1dp"
-            android:background="#D8000000"
             android:padding="4sp"
             app:columnCount="2"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,42 +27,42 @@
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_margin="2.5sp"
-                android:src="@drawable/img" />
+                android:src="@drawable/blacksquare" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_margin="2.5sp"
-                android:src="@drawable/img" />
+                android:src="@drawable/blacksquare" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_margin="2.5sp"
-                android:src="@drawable/img" />
+                android:src="@drawable/blacksquare" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_margin="2.5sp"
-                android:src="@drawable/img" />
+                android:src="@drawable/blacksquare" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_margin="2.5sp"
-                android:src="@drawable/img" />
+                android:src="@drawable/blacksquare" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_margin="2.5sp"
-                android:src="@drawable/img" />
+                android:src="@drawable/blacksquare" />
         </androidx.gridlayout.widget.GridLayout>
 
     </ScrollView>

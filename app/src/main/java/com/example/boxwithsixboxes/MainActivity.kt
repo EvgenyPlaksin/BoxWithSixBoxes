@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import com.example.boxwithsixboxes.fragments.RealSixBoxFragment
 import com.example.boxwithsixboxes.fragments.fourBoxFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_four_box.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,10 +30,10 @@ class MainActivity : AppCompatActivity() {
         clicker.setOnClickListener(object : View.OnClickListener{
             override fun onClick(view: View?) {
                 if(six) {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.conteiner, fourBoxFragment()).commit()
-                    android.os.Handler().postDelayed({ conteiner.startAnimation(antianim)},
-                        100)
+                    conteiner.startAnimation(antianim)
+                    android.os.Handler().postDelayed({supportFragmentManager.beginTransaction()
+                        .replace(R.id.conteiner, fourBoxFragment()).commit()},
+                        300)
                     six = false
                 }
             }
